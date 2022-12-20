@@ -1,0 +1,54 @@
+-- Retrieve the customer's email than live in California
+--SELECT first_name, last_name, email, address.district FROM customer INNER JOIN address ON customer.address_id = address.address_id WHERE address.district LIKE 'California'
+
+-- Retrieve the list of all movies "Nick Wahlberg" has been in
+SELECT title, actor.first_name, actor.last_name FROM actor 
+INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+INNER JOIN film ON film_actor.film_id = film.film_id
+WHERE actor.first_name = 'Nick'
+AND actor.last_name = 'Wahlberg'
+
+
+-- TIMESTAMPS --
+https://www.postgresql.org/docs/12/functions-formatting.html
+SELECT NOW()
+SELECT TIMEOFDAY()
+SELECT CURRENT_DATE
+SELECT AGE(last_update) FROM actor
+SELECT EXTRACT(YEAR FROM payment_date) AS year FROM payment
+SELECT EXTRACT(QUARTER FROM payment_date) AS year FROM payment
+SELECT TO_CHAR(payment_date, 'DD-MM-YYYY') FROM payment
+SELECT TO_CHAR(payment_date, 'MONTH YYYY') FROM payment
+SELECT TO_CHAR(payment_date, 'mon / YYYY') FROM payment
+-- During which months did payments occur?
+SELECT EXTRACT(MONTH FROM payment_date) FROM payment
+
+-- Format the full month name
+SELECT DISTINCT TO_CHAR(payment_date, 'MONTH') FROM payment
+
+-- Format the full day name
+SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
+
+-- How many payments occurred on a Monday?
+SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
+
+-- Math --
+https://www.postgresql.org/docs/current/functions-math.html
+
+-- String --
+https://www.postgresql.org/docs/current/functions-string.html
+
+
+-- Retrieve all customers who have at least one payment whose amount is greater than 11
+SELECT first_name || ' '  || last_name FROM customer c
+WHERE EXISTS (SELECT * FROM payment p WHERE p.customer_id = c.customer_id AND amount > 11)
+
+-- SELFJOIN --
+-- Find all the pairs of films that have the same length
+SELECT f1.title || '-' || f1.length, f2.title || '-' || f2.length 
+FROM film AS f1 
+INNER JOIN film AS f2
+ON f1.film_id != f2.film_id 
+AND f1.length = f2.length
+
+
