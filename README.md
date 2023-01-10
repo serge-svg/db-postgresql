@@ -9,4 +9,7 @@
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
 
- 
+## Types of Joins
+
+![imagen](https://user-images.githubusercontent.com/59533087/211632361-3d17caa8-d1a6-4b35-af49-6656485770f8.png)
+
