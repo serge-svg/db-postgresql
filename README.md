@@ -19,13 +19,15 @@ Lorem ipsum dolor
 * Download data base exercises.tar 
 * https://docs.google.com/document/d/1wiuYbTQslmfolQWgeVPB356csjK6yqOUBhgC7fM44o8/edit
 
-<a name="item2"></>
+<a name="item2">  
+  
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
 
 [Subir](#top)
 
-<a name="item3"></>
+<a name="item3">  
+  
 ## Types of Joins
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59533087/211632361-3d17caa8-d1a6-4b35-af49-6656485770f8.png">
@@ -40,10 +42,10 @@ Lorem ipsum dolor
 * PostgreSQL FULL OUTER JOIN (or sometimes called FULL JOIN)
   * This type of join returns all rows from the LEFT-hand table and RIGHT-hand table with nulls in place where the join condition is not met.
 
-[Subir](#top)
+[Go back](#top)
 
-<a name="item4"></>  
-  
+<a name="item4">  
+    
 ## Date/Time Formatting
 https://www.postgresql.org/docs/12/functions-formatting.html
 SELECT NOW()
@@ -67,8 +69,10 @@ SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
 -- How many payments occurred on a Monday?
 SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
 
-[Subir](#top)
-<a name="item5"></>
+[Go back](#top)
+  
+<a name="item5">  
+  
 ## ALTERS
 https://www.postgresql.org/docs/current/sql-altertable.html
 ### ALTER TABLE table_name
@@ -83,5 +87,6 @@ RENAME COLUMN column_name TO new_column_name
 ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
 ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
 
-[Subir](#top)
+[Go back](#top)  
+  
 
