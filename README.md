@@ -10,7 +10,7 @@
 
 Lorem ipsum dolor
 
-<a name="item1"></>
+<a name="item1" />
 ## Install PostgreSQL environment for the exercises1
 * https://www.postgresql.org/download/
 * Download data base rentaldvd.tar  
