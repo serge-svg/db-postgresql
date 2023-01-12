@@ -1,11 +1,14 @@
-# PostgreSQL
+<a name="top"></a>
+# PostgreSQL tips
 
 ## Content index
 * [Install PostgreSQL](#item1)
 * [Documentation 2](#item2)
 * [Types of Joins 3](#item3)
 * [Date/Time Formatting](#item4)   
-* [Alters](#item5)   
+* [ALTERS](#item5)   
+
+Lorem ipsum dolor
 
 <a name="item1"></>
 ## Install PostgreSQL environment for the exercises1
@@ -17,6 +20,8 @@
 <a name="item2"></>
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
+
+[Subir](#top)
 
 <a name="item3"></>
 ## Types of Joins
@@ -32,7 +37,9 @@
   * This type of join returns all rows from the RIGHT-hand table specified in the ON condition and only those rows from the other table where the joined         fields are equal (join condition is met).
 * PostgreSQL FULL OUTER JOIN (or sometimes called FULL JOIN)
   * This type of join returns all rows from the LEFT-hand table and RIGHT-hand table with nulls in place where the join condition is not met.
-  
+
+[Subir](#top)
+
 <a name="item4"></>
 ## Date/Time Formatting
 https://www.postgresql.org/docs/12/functions-formatting.html
@@ -57,6 +64,7 @@ SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
 -- How many payments occurred on a Monday?
 SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
 
+[Subir](#top)
 <a name="item5"></>
 ## ALTERS
 https://www.postgresql.org/docs/current/sql-altertable.html
@@ -71,3 +79,6 @@ RENAME COLUMN column_name TO new_column_name
 ### ALTER CONSTRAINT constraint_name
 ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
 ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
+
+[Subir](#top)
+
