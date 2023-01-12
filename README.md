@@ -8,9 +8,11 @@
 * [Date/Time Formatting](#item4)   
 * [ALTERS](#item5)   
 
-Lorem ipsum dolor
+Lorem ipsum dolor  
 
-<a name="item1" />
+
+<a name="item1" />  
+
 ## Install PostgreSQL environment for the exercises1
 * https://www.postgresql.org/download/
 * Download data base rentaldvd.tar  
@@ -40,7 +42,8 @@ Lorem ipsum dolor
 
 [Subir](#top)
 
-<a name="item4"></>
+<a name="item4"></>  
+  
 ## Date/Time Formatting
 https://www.postgresql.org/docs/12/functions-formatting.html
 SELECT NOW()
