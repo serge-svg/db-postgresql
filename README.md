@@ -7,8 +7,7 @@
 * [Types of Joins 3](#item3)
 * [Date/Time Formatting](#item4)   
 * [ALTERS](#item5)   
-
-Lorem ipsum dolor  
+* [EXERCISES](#item6)   
 
 
 <a name="item1" />  
