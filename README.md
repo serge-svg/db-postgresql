@@ -88,5 +88,19 @@ ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
 ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
 
 [Go back](#top)  
+
+<a name="item6">  
+
+## Exercises
+
+### Basic Select
+
+10. Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. 
+Your result cannot contain duplicates.
+
+
+
+![imagen](https://user-images.githubusercontent.com/59533087/212293355-6ef46883-c869-4ff7-81fd-036a5830e6af.png)
+
   
 
