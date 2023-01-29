@@ -7,10 +7,10 @@
 * [Types of Joins 3](#joins)
 * [Date/Time Formatting](#dateTime)   
 * [Alter](#alter)   
-* [Samples](#exerci)   
+* [Samples](#sample)   
 
 
-<a name="toPractice" />  
+<a name="toPractice">  
 
 ## To practice (optinal environment)
 * Install postgreSQL
