@@ -1,4 +1,4 @@
-<a name="top"></a>
+<a name="top">
 # PostgreSQL tips
 
 ## Content index
@@ -25,7 +25,7 @@
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
 
-[Go back](#top)
+[Index](#top)
 
 <a name="joins">  
   
