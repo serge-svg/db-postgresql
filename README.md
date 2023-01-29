@@ -2,30 +2,32 @@
 # PostgreSQL tips
 
 ## Content index
-* [Install PostgreSQL](#item1)
-* [Documentation 2](#item2)
-* [Types of Joins 3](#item3)
-* [Date/Time Formatting](#item4)   
-* [ALTERS](#item5)   
-* [EXERCISES](#item6)   
+* [Install PostgreSQL](#toPractice)
+* [Documentation 2](#documentation)
+* [Types of Joins 3](#joins)
+* [Date/Time Formatting](#dateTime)   
+* [Alter](#alter)   
+* [Samples](#exerci)   
 
 
-<a name="item1" />  
+<a name="toPractice" />  
 
-## Install PostgreSQL environment for the exercises1
-* https://www.postgresql.org/download/
-* Download data base rentaldvd.tar  
-* Download data base exercises.tar 
-* https://docs.google.com/document/d/1wiuYbTQslmfolQWgeVPB356csjK6yqOUBhgC7fM44o8/edit
+## To practice (optinal environment)
+* Install postgreSQL
+* Load databases
+	* Download data base rentaldvd.tar  
+	* Download data base exercises.tar 
+* Exercises
+	* https://docs.google.com/document/d/1wiuYbTQslmfolQWgeVPB356csjK6yqOUBhgC7fM44o8/edit
 
-<a name="item2">  
+<a name="documentation">  
   
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
 
 [Go back](#top)
 
-<a name="item3">  
+<a name="joins">  
   
 ## Types of Joins
 <p align="center">
@@ -41,9 +43,9 @@
 * PostgreSQL FULL OUTER JOIN (or sometimes called FULL JOIN)
   * This type of join returns all rows from the LEFT-hand table and RIGHT-hand table with nulls in place where the join condition is not met.
 
-[Go back](#top)
+[return](#top)
 
-<a name="item4">  
+<a name="dateTime">  
     
 ## Date/Time Formatting
 https://www.postgresql.org/docs/12/functions-formatting.html
@@ -69,11 +71,11 @@ SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
 * How many payments occurred on a Monday?
 SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
 
-[Go back](#top)
+[return](#top)
   
-<a name="item5">  
+<a name="alter">  
   
-## ALTERS
+## Alter
 https://www.postgresql.org/docs/current/sql-altertable.html
 ### ALTER TABLE table_name
 ALTER TABLE table_name 
@@ -87,11 +89,11 @@ RENAME COLUMN column_name TO new_column_name
 ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
 ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
 
-[Go back](#top)  
+[return](#top)  
 
-<a name="item6">  
+<a name="samples">  
 
-## Exercises
+## Samples
 
 ### Basic Select
 1. Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name).
