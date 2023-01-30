@@ -3,8 +3,8 @@
 
 ## Content index
 * [Install PostgreSQL](#toPractice)
-* [Documentation 2](#documentation)
-* [Types of Joins 3](#joins)
+* [Documentation](#documentation)
+* [Types of Joins](#joins)
 * [Date/Time Formatting](#dateTime)   
 * [Alter](#alter)   
 * [Samples](#sample)   
