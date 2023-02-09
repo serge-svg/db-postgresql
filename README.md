@@ -7,7 +7,7 @@
 * [Types of Joins](#joins)
 * [Date/Time Formatting](#dateTime)   
 * [Alter](#alter)   
-* [Samples](#sample)   
+* [Samples](#samples)   
 
 
 <a name="toPractice">  
@@ -25,7 +25,7 @@
 ## Documentation
 * https://www.postgresql.org/docs/current/index.html  
 
-[Index](#top)
+[return](#top)
 
 <a name="joins">  
   
