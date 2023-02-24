@@ -4,7 +4,8 @@
 ## Content index
 * [Install PostgreSQL](#toPractice)
 * [Documentation](#documentation)
-* [Types of Joins](#joins)
+* [Joins](#joins)
+* [Commands](#commands)
 * [Date/Time Formatting](#dateTime)   
 * [Alter](#alter)   
 * [Samples](#samples)   
@@ -29,7 +30,7 @@
 
 <a name="joins">  
   
-## Types of Joins
+## Joins
 <p align="center">
   <img src="https://user-images.githubusercontent.com/59533087/211632361-3d17caa8-d1a6-4b35-af49-6656485770f8.png">
 </p>
@@ -43,9 +44,11 @@
 * PostgreSQL FULL OUTER JOIN (or sometimes called FULL JOIN)
   * This type of join returns all rows from the LEFT-hand table and RIGHT-hand table with nulls in place where the join condition is not met.
 
-## Types of commands
+<a name="commands"> 
+	
+## Commands
 <p align="center">
-![image](https://user-images.githubusercontent.com/59533087/221257371-db4e79f6-3cd5-4b3b-87fc-ad5077319957.png)
+  <img src="https://user-images.githubusercontent.com/59533087/221257371-db4e79f6-3cd5-4b3b-87fc-ad5077319957.png">
 </p>
 
 [return](#top)
@@ -53,7 +56,7 @@
 <a name="dateTime">  
     
 ## Date/Time Formatting
-https://www.postgresql.org/docs/12/functions-formatting.html
+https://www.postgresql.org/docs/12/functions-formatting.html  
 SELECT NOW()
 SELECT TIMEOFDAY()
 SELECT CURRENT_DATE
