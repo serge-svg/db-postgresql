@@ -43,6 +43,11 @@
 * PostgreSQL FULL OUTER JOIN (or sometimes called FULL JOIN)
   * This type of join returns all rows from the LEFT-hand table and RIGHT-hand table with nulls in place where the join condition is not met.
 
+## Types of commands
+<p align="center">
+![image](https://user-images.githubusercontent.com/59533087/221257371-db4e79f6-3cd5-4b3b-87fc-ad5077319957.png)
+</p>
+
 [return](#top)
 
 <a name="dateTime">  
