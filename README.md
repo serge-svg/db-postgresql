@@ -85,17 +85,15 @@ SELECT TO_CHAR(payment_date, 'mon / YYYY') FROM payment
   
 ## Alter
 https://www.postgresql.org/docs/current/sql-altertable.html
-### ALTER TABLE table_name
-ALTER TABLE table_name 
-RENAME TO new_table_name
+* ALTER TABLE table_name
+	* ALTER TABLE table_name RENAME TO new_table_name
 
-### ALTER COLUMN column_name
-ALTER TABLE table_name 
-RENAME COLUMN column_name TO new_column_name
+* ALTER COLUMN column_name
+	* ALTER TABLE table_name RENAME COLUMN column_name TO new_column_name
 
-### ALTER CONSTRAINT constraint_name
-ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
-ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
+* ALTER CONSTRAINT constraint_name
+	* ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL
+	* ALTER TABLE students ALTER COLUMN graduation_year TYPE VARCHAR(4)
 
 [return](#top)  
 
