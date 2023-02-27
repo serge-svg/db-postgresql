@@ -56,16 +56,16 @@
 <a name="dateTime">  
     
 ## Date/Time Formatting
-https://www.postgresql.org/docs/12/functions-formatting.html  
-SELECT NOW()
-SELECT TIMEOFDAY()
-SELECT CURRENT_DATE
-SELECT AGE(last_update) FROM actor
-SELECT EXTRACT(YEAR FROM payment_date) AS year FROM payment
-SELECT EXTRACT(QUARTER FROM payment_date) AS year FROM payment
-SELECT TO_CHAR(payment_date, 'DD-MM-YYYY') FROM payment
-SELECT TO_CHAR(payment_date, 'MONTH YYYY') FROM payment
-SELECT TO_CHAR(payment_date, 'mon / YYYY') FROM payment
+https://www.postgresql.org/docs/12/functions-formatting.html    
+SELECT NOW()  
+SELECT TIMEOFDAY()  
+SELECT CURRENT_DATE  
+SELECT AGE(last_update) FROM actor  
+SELECT EXTRACT(YEAR FROM payment_date) AS year FROM payment  
+SELECT EXTRACT(QUARTER FROM payment_date) AS year FROM payment  
+SELECT TO_CHAR(payment_date, 'DD-MM-YYYY') FROM payment  
+SELECT TO_CHAR(payment_date, 'MONTH YYYY') FROM payment  
+SELECT TO_CHAR(payment_date, 'mon / YYYY') FROM payment  
 
 * During which months did payments occur?
 SELECT EXTRACT(MONTH FROM payment_date) FROM payment
