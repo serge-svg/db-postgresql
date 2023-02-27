@@ -68,16 +68,16 @@ SELECT TO_CHAR(payment_date, 'MONTH YYYY') FROM payment
 SELECT TO_CHAR(payment_date, 'mon / YYYY') FROM payment  
 
 * During which months did payments occur?
-** SELECT EXTRACT(MONTH FROM payment_date) FROM payment
+	* SELECT EXTRACT(MONTH FROM payment_date) FROM payment
 
 * Format the full month name
-** SELECT DISTINCT TO_CHAR(payment_date, 'MONTH') FROM payment
+	* SELECT DISTINCT TO_CHAR(payment_date, 'MONTH') FROM payment
 
 * Format the full day name
-** SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
+	* SELECT DISTINCT TO_CHAR(payment_date, 'Day') FROM payment
 
 * How many payments occurred on a Monday?
-** SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
+	* SELECT COUNT(*) FROM payment WHERE EXTRACT(dow FROM payment_date) = 1
 
 [return](#top)
   
